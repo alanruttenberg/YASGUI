@@ -6,7 +6,8 @@ var gulp = require('gulp'),
 	nodemon = require('gulp-nodemon');
 
 gulp.task('watch', function() {
-	gulp.watch(["./src/**/*.js"], [ 'browserifyForDebug' ]);
+    gulp.watch(["./src/**/*.js", "./node_modules/yasgui-yasr/dist/yasr.bundled.min.js",
+		"./node_modules/yasgui-yasqe/dist/yasqe.bundled.min.js"], [ 'browserifyForDebug' ]);
 	gulp.watch("./src/**/*.scss", [ 'makeCss' ]);
 	  gulp.watch(
 		'./*.html'
