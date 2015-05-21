@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 
 gulp.task('watch', function() {
     gulp.watch(["./src/**/*.js", "./node_modules/yasgui-yasr/dist/yasr.bundled.min.js",
-		"./node_modules/yasgui-yasqe/dist/yasqe.bundled.min.js"], [ 'browserifyForDebug' ]);
+		"./node_modules/yasgui-yasqe/dist/yasqe.bundled.min.js"], [ 'makeBundledCopy', 'browserifyForDebug' ]);
 	gulp.watch("./src/**/*.scss", [ 'makeCss' ]);
 	  gulp.watch(
 		'./*.html'

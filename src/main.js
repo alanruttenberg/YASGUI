@@ -5,6 +5,7 @@ var $ = require('jquery'),
 	utils = require('yasgui-utils');
 require('./jquery/extendJquery.js');//extend some own jquery plugins
 require('jquery-ui/position');
+require('jquery-ui/sortable');
 
 /**
  * set this dynamically on instantiation: this YASR setting is dependent on the corsProxy yasgui setting
