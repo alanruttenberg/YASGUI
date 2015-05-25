@@ -1,6 +1,6 @@
 #!/bin/sh
 export PATH=/usr/local/bin:$PATH
-cd ..YASR
+cd ../YASR
 gulp dev &
 cd ../YASQE
 gulp dev &
